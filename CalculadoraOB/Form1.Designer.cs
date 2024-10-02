@@ -29,98 +29,110 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label3 = new Label();
-            comboBox1 = new ComboBox();
+            Resul1 = new Label();
+            Most1 = new ComboBox();
             textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label2 = new Label();
-            button1 = new Button();
-            label1 = new Label();
+            txtnum2 = new TextBox();
+            Txtnum1 = new TextBox();
+            Num2 = new Label();
+            Btt1 = new Button();
+            Num1 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(Resul1);
+            panel1.Controls.Add(Most1);
             panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(94, 56);
+            panel1.Controls.Add(txtnum2);
+            panel1.Controls.Add(Txtnum1);
+            panel1.Controls.Add(Num2);
+            panel1.Controls.Add(Btt1);
+            panel1.Controls.Add(Num1);
+            panel1.Location = new Point(94, 34);
             panel1.Name = "panel1";
-            panel1.Size = new Size(481, 292);
+            panel1.Size = new Size(556, 314);
             panel1.TabIndex = 0;
             // 
-            // label3
+            // Resul1
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(174, 204);
-            label3.Name = "label3";
-            label3.Size = new Size(78, 20);
-            label3.TabIndex = 7;
-            label3.Text = "Resultado:";
+            Resul1.AutoSize = true;
+            Resul1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Resul1.ForeColor = SystemColors.Highlight;
+            Resul1.Location = new Point(235, 230);
+            Resul1.Name = "Resul1";
+            Resul1.Size = new Size(126, 31);
+            Resul1.TabIndex = 7;
+            Resul1.Text = "Resultado:";
             // 
-            // comboBox1
+            // Most1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Suma", "Resta", "Multiplicación", "División" });
-            comboBox1.Location = new Point(274, 32);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 6;
+            Most1.BackColor = Color.FromArgb(255, 255, 192);
+            Most1.FormattingEnabled = true;
+            Most1.Items.AddRange(new object[] { "Suma", "Resta", "Multiplicación", "División" });
+            Most1.Location = new Point(402, 20);
+            Most1.Name = "Most1";
+            Most1.Size = new Size(151, 28);
+            Most1.TabIndex = 6;
             // 
             // textBox3
             // 
+            textBox3.BackColor = SystemColors.InactiveCaption;
             textBox3.Enabled = false;
-            textBox3.Location = new Point(291, 197);
+            textBox3.Location = new Point(387, 234);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 5;
             // 
-            // textBox2
+            // txtnum2
             // 
-            textBox2.Location = new Point(144, 137);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(80, 27);
-            textBox2.TabIndex = 4;
+            txtnum2.Location = new Point(213, 141);
+            txtnum2.Name = "txtnum2";
+            txtnum2.Size = new Size(164, 27);
+            txtnum2.TabIndex = 4;
             // 
-            // textBox1
+            // Txtnum1
             // 
-            textBox1.Location = new Point(144, 60);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(80, 27);
-            textBox1.TabIndex = 3;
+            Txtnum1.Location = new Point(180, 67);
+            Txtnum1.Name = "Txtnum1";
+            Txtnum1.Size = new Size(150, 27);
+            Txtnum1.TabIndex = 3;
             // 
-            // label2
+            // Num2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(15, 140);
-            label2.Name = "label2";
-            label2.Size = new Size(123, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Segundo numero";
+            Num2.AutoSize = true;
+            Num2.Font = new Font("SimSun", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Num2.ForeColor = SystemColors.ControlDarkDark;
+            Num2.Location = new Point(15, 140);
+            Num2.Name = "Num2";
+            Num2.Size = new Size(192, 23);
+            Num2.TabIndex = 2;
+            Num2.Text = "Segundo numero";
             // 
-            // button1
+            // Btt1
             // 
-            button1.Location = new Point(311, 97);
-            button1.Name = "button1";
-            button1.Size = new Size(88, 50);
-            button1.TabIndex = 1;
-            button1.Text = "calcular";
-            button1.UseVisualStyleBackColor = true;
+            Btt1.BackColor = Color.FromArgb(255, 255, 192);
+            Btt1.ForeColor = Color.Black;
+            Btt1.Location = new Point(449, 98);
+            Btt1.Name = "Btt1";
+            Btt1.Size = new Size(88, 50);
+            Btt1.TabIndex = 1;
+            Btt1.Text = "calcular";
+            Btt1.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // Num1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(15, 63);
-            label1.Name = "label1";
-            label1.Size = new Size(107, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Primer numero";
+            Num1.AutoSize = true;
+            Num1.Font = new Font("Sitka Banner", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Num1.ForeColor = Color.Gray;
+            Num1.Location = new Point(15, 60);
+            Num1.Name = "Num1";
+            Num1.Size = new Size(159, 33);
+            Num1.TabIndex = 0;
+            Num1.Text = "Primer Numero";
+            Num1.TextAlign = ContentAlignment.BottomRight;
+            Num1.Click += label1_Click;
             // 
             // Form1
             // 
@@ -138,13 +150,13 @@
         #endregion
 
         private Panel panel1;
-        private Label label2;
-        private Button button1;
-        private Label label1;
-        private Label label3;
-        private ComboBox comboBox1;
+        private Label Num2;
+        private Button Btt1;
+        private Label Num1;
+        private Label Resul1;
+        private ComboBox Most1;
         private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtnum2;
+        private TextBox Txtnum1;
     }
 }
