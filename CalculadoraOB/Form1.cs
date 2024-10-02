@@ -6,6 +6,7 @@ namespace CalculadoraOB
         {
             InitializeComponent();
             cmbOperacion.Items.Add("Suma");
+            cmbOperacion.Items.Add("Resta");
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -27,9 +28,15 @@ namespace CalculadoraOB
 
                 txtResultado.Text = resultado.ToString();
             }
+            else if (cmbOperacion.SelectedItem?.ToString()=="Resta")
+            {
+                resultado=numero1-numero2;
+
+                txtResultado.Text= resultado.ToString();
+            }
             else
             {
-                MessageBox.Show("Seleccionar la operacion de sumar.");
+                MessageBox.Show("Seleccionar la operacion valida");
             }
         }
     }
