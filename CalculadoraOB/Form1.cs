@@ -36,6 +36,13 @@ namespace CalculadoraOB
 
                 txtResultado.Text= resultado.ToString();
             }
+
+            else if (cmbOperacion.SelectedItem?.ToString() == "Multiplicacion")
+            {
+                resultado = numero1 * numero2;
+                txtResultado.Text = resultado.ToString();
+            }
+
             else
             {
                 MessageBox.Show("Seleccionar la operacion valida");
