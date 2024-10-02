@@ -29,110 +29,125 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label1 = new Label();
             Resul1 = new Label();
-            Most1 = new ComboBox();
-            textBox3 = new TextBox();
-            txtnum2 = new TextBox();
-            Txtnum1 = new TextBox();
+            cmbOperacion = new ComboBox();
+            txtResultado = new TextBox();
+            txtNum2 = new TextBox();
+            txtNum1 = new TextBox();
             Num2 = new Label();
-            Btt1 = new Button();
+            btnCalcular = new Button();
             Num1 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.ControlDarkDark;
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(Resul1);
-            panel1.Controls.Add(Most1);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(txtnum2);
-            panel1.Controls.Add(Txtnum1);
+            panel1.Controls.Add(cmbOperacion);
+            panel1.Controls.Add(txtResultado);
+            panel1.Controls.Add(txtNum2);
+            panel1.Controls.Add(txtNum1);
             panel1.Controls.Add(Num2);
-            panel1.Controls.Add(Btt1);
+            panel1.Controls.Add(btnCalcular);
             panel1.Controls.Add(Num1);
-            panel1.Location = new Point(94, 34);
+            panel1.Location = new Point(12, 35);
             panel1.Name = "panel1";
-            panel1.Size = new Size(556, 314);
+            panel1.Size = new Size(776, 393);
             panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(213, 36);
+            label1.Name = "label1";
+            label1.Size = new Size(344, 60);
+            label1.TabIndex = 1;
+            label1.Text = "CALCULADORA";
             // 
             // Resul1
             // 
             Resul1.AutoSize = true;
             Resul1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Resul1.ForeColor = SystemColors.Highlight;
-            Resul1.Location = new Point(235, 230);
+            Resul1.Location = new Point(410, 300);
             Resul1.Name = "Resul1";
             Resul1.Size = new Size(126, 31);
             Resul1.TabIndex = 7;
             Resul1.Text = "Resultado:";
             // 
-            // Most1
+            // cmbOperacion
             // 
-            Most1.BackColor = Color.FromArgb(255, 255, 192);
-            Most1.FormattingEnabled = true;
-            Most1.Items.AddRange(new object[] { "Suma", "Resta", "Multiplicación", "División" });
-            Most1.Location = new Point(402, 20);
-            Most1.Name = "Most1";
-            Most1.Size = new Size(151, 28);
-            Most1.TabIndex = 6;
+            cmbOperacion.BackColor = Color.DimGray;
+            cmbOperacion.ForeColor = Color.Transparent;
+            cmbOperacion.FormattingEnabled = true;
+            cmbOperacion.Items.AddRange(new object[] { "Suma", "Resta", "Multiplicación", "División" });
+            cmbOperacion.Location = new Point(562, 162);
+            cmbOperacion.Name = "cmbOperacion";
+            cmbOperacion.Size = new Size(151, 28);
+            cmbOperacion.TabIndex = 6;
             // 
-            // textBox3
+            // txtResultado
             // 
-            textBox3.BackColor = SystemColors.InactiveCaption;
-            textBox3.Enabled = false;
-            textBox3.Location = new Point(387, 234);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 5;
+            txtResultado.BackColor = SystemColors.InactiveCaption;
+            txtResultado.Enabled = false;
+            txtResultado.Location = new Point(562, 304);
+            txtResultado.Name = "txtResultado";
+            txtResultado.Size = new Size(125, 27);
+            txtResultado.TabIndex = 5;
             // 
-            // txtnum2
+            // txtNum2
             // 
-            txtnum2.Location = new Point(213, 141);
-            txtnum2.Name = "txtnum2";
-            txtnum2.Size = new Size(164, 27);
-            txtnum2.TabIndex = 4;
+            txtNum2.Location = new Point(274, 211);
+            txtNum2.Name = "txtNum2";
+            txtNum2.Size = new Size(192, 27);
+            txtNum2.TabIndex = 4;
             // 
-            // Txtnum1
+            // txtNum1
             // 
-            Txtnum1.Location = new Point(180, 67);
-            Txtnum1.Name = "Txtnum1";
-            Txtnum1.Size = new Size(150, 27);
-            Txtnum1.TabIndex = 3;
+            txtNum1.Location = new Point(274, 138);
+            txtNum1.Name = "txtNum1";
+            txtNum1.Size = new Size(192, 27);
+            txtNum1.TabIndex = 3;
             // 
             // Num2
             // 
             Num2.AutoSize = true;
             Num2.Font = new Font("SimSun", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Num2.ForeColor = SystemColors.ControlDarkDark;
-            Num2.Location = new Point(15, 140);
+            Num2.ForeColor = Color.Transparent;
+            Num2.Location = new Point(50, 211);
             Num2.Name = "Num2";
-            Num2.Size = new Size(192, 23);
+            Num2.Size = new Size(205, 23);
             Num2.TabIndex = 2;
-            Num2.Text = "Segundo numero";
+            Num2.Text = "Segundo número:";
             // 
-            // Btt1
+            // btnCalcular
             // 
-            Btt1.BackColor = Color.FromArgb(255, 255, 192);
-            Btt1.ForeColor = Color.Black;
-            Btt1.Location = new Point(449, 98);
-            Btt1.Name = "Btt1";
-            Btt1.Size = new Size(88, 50);
-            Btt1.TabIndex = 1;
-            Btt1.Text = "calcular";
-            Btt1.UseVisualStyleBackColor = false;
+            btnCalcular.BackColor = Color.DimGray;
+            btnCalcular.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCalcular.ForeColor = Color.Transparent;
+            btnCalcular.Location = new Point(122, 287);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(225, 55);
+            btnCalcular.TabIndex = 1;
+            btnCalcular.Text = "CALCULAR";
+            btnCalcular.UseVisualStyleBackColor = false;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // Num1
             // 
             Num1.AutoSize = true;
             Num1.Font = new Font("Sitka Banner", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Num1.ForeColor = Color.Gray;
-            Num1.Location = new Point(15, 60);
+            Num1.ForeColor = Color.Transparent;
+            Num1.Location = new Point(50, 131);
             Num1.Name = "Num1";
-            Num1.Size = new Size(159, 33);
+            Num1.Size = new Size(171, 33);
             Num1.TabIndex = 0;
-            Num1.Text = "Primer Numero";
+            Num1.Text = "Primer Numero: ";
             Num1.TextAlign = ContentAlignment.BottomRight;
-            Num1.Click += label1_Click;
             // 
             // Form1
             // 
@@ -151,12 +166,13 @@
 
         private Panel panel1;
         private Label Num2;
-        private Button Btt1;
+        private Button btnCalcular;
         private Label Num1;
         private Label Resul1;
-        private ComboBox Most1;
-        private TextBox textBox3;
-        private TextBox txtnum2;
-        private TextBox Txtnum1;
+        private ComboBox cmbOperacion;
+        private TextBox txtResultado;
+        private TextBox txtNum2;
+        private TextBox txtNum1;
+        private Label label1;
     }
 }
