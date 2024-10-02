@@ -7,6 +7,8 @@ namespace CalculadoraOB
             InitializeComponent();
             cmbOperacion.Items.Add("Suma");
             cmbOperacion.Items.Add("Resta");
+            cmbOperacion.Items.Add("Multiplicacion");
+            cmbOperacion.Items.Add("Division");
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
