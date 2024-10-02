@@ -38,12 +38,14 @@
             Num2 = new Label();
             btnCalcular = new Button();
             Num1 = new Label();
+            btnLimpiar = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ControlDarkDark;
+            panel1.Controls.Add(btnLimpiar);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(Resul1);
             panel1.Controls.Add(cmbOperacion);
@@ -53,19 +55,18 @@
             panel1.Controls.Add(Num2);
             panel1.Controls.Add(btnCalcular);
             panel1.Controls.Add(Num1);
-            panel1.Location = new Point(10, 26);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(11, 35);
             panel1.Name = "panel1";
-            panel1.Size = new Size(679, 295);
+            panel1.Size = new Size(776, 489);
             panel1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(186, 27);
+            label1.Location = new Point(213, 36);
             label1.Name = "label1";
-            label1.Size = new Size(276, 47);
+            label1.Size = new Size(344, 60);
             label1.TabIndex = 1;
             label1.Text = "CALCULADORA";
             // 
@@ -74,9 +75,9 @@
             Resul1.AutoSize = true;
             Resul1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Resul1.ForeColor = SystemColors.Highlight;
-            Resul1.Location = new Point(359, 225);
+            Resul1.Location = new Point(410, 300);
             Resul1.Name = "Resul1";
-            Resul1.Size = new Size(105, 25);
+            Resul1.Size = new Size(126, 31);
             Resul1.TabIndex = 7;
             Resul1.Text = "Resultado:";
             // 
@@ -85,36 +86,32 @@
             cmbOperacion.BackColor = Color.DimGray;
             cmbOperacion.ForeColor = Color.Transparent;
             cmbOperacion.FormattingEnabled = true;
-            cmbOperacion.Location = new Point(492, 122);
-            cmbOperacion.Margin = new Padding(3, 2, 3, 2);
+            cmbOperacion.Location = new Point(562, 163);
             cmbOperacion.Name = "cmbOperacion";
-            cmbOperacion.Size = new Size(133, 23);
+            cmbOperacion.Size = new Size(151, 28);
             cmbOperacion.TabIndex = 6;
             // 
             // txtResultado
             // 
             txtResultado.BackColor = SystemColors.InactiveCaption;
             txtResultado.Enabled = false;
-            txtResultado.Location = new Point(492, 228);
-            txtResultado.Margin = new Padding(3, 2, 3, 2);
+            txtResultado.Location = new Point(562, 304);
             txtResultado.Name = "txtResultado";
-            txtResultado.Size = new Size(110, 23);
+            txtResultado.Size = new Size(125, 27);
             txtResultado.TabIndex = 5;
             // 
             // txtNum2
             // 
-            txtNum2.Location = new Point(240, 158);
-            txtNum2.Margin = new Padding(3, 2, 3, 2);
+            txtNum2.Location = new Point(274, 211);
             txtNum2.Name = "txtNum2";
-            txtNum2.Size = new Size(168, 23);
+            txtNum2.Size = new Size(191, 27);
             txtNum2.TabIndex = 4;
             // 
             // txtNum1
             // 
-            txtNum1.Location = new Point(240, 104);
-            txtNum1.Margin = new Padding(3, 2, 3, 2);
+            txtNum1.Location = new Point(274, 139);
             txtNum1.Name = "txtNum1";
-            txtNum1.Size = new Size(168, 23);
+            txtNum1.Size = new Size(191, 27);
             txtNum1.TabIndex = 3;
             // 
             // Num2
@@ -122,9 +119,9 @@
             Num2.AutoSize = true;
             Num2.Font = new Font("SimSun", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Num2.ForeColor = Color.Transparent;
-            Num2.Location = new Point(44, 158);
+            Num2.Location = new Point(50, 211);
             Num2.Name = "Num2";
-            Num2.Size = new Size(174, 19);
+            Num2.Size = new Size(205, 23);
             Num2.TabIndex = 2;
             Num2.Text = "Segundo número:";
             // 
@@ -133,10 +130,9 @@
             btnCalcular.BackColor = Color.DimGray;
             btnCalcular.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCalcular.ForeColor = Color.Transparent;
-            btnCalcular.Location = new Point(107, 215);
-            btnCalcular.Margin = new Padding(3, 2, 3, 2);
+            btnCalcular.Location = new Point(122, 287);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(197, 41);
+            btnCalcular.Size = new Size(225, 55);
             btnCalcular.TabIndex = 1;
             btnCalcular.Text = "CALCULAR";
             btnCalcular.UseVisualStyleBackColor = false;
@@ -147,20 +143,32 @@
             Num1.AutoSize = true;
             Num1.Font = new Font("Sitka Banner", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Num1.ForeColor = Color.Transparent;
-            Num1.Location = new Point(44, 98);
+            Num1.Location = new Point(50, 131);
             Num1.Name = "Num1";
-            Num1.Size = new Size(143, 28);
+            Num1.Size = new Size(171, 33);
             Num1.TabIndex = 0;
             Num1.Text = "Primer Numero: ";
             Num1.TextAlign = ContentAlignment.BottomRight;
             // 
+            // btnLimpiar
+            // 
+            btnLimpiar.BackColor = Color.DimGray;
+            btnLimpiar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLimpiar.ForeColor = Color.Transparent;
+            btnLimpiar.Location = new Point(122, 383);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(225, 55);
+            btnLimpiar.TabIndex = 8;
+            btnLimpiar.Text = "LIMPIAR";
+            btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(800, 536);
             Controls.Add(panel1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             panel1.ResumeLayout(false);
@@ -180,5 +188,6 @@
         private TextBox txtNum2;
         private TextBox txtNum1;
         private Label label1;
+        private Button btnLimpiar;
     }
 }
